@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "inputblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "diabetes/diabetes-data/{blobname}.csv",
+      "connection": "AZURE_STORAGE_CONNECTION"
+    },
+    {
+      "name": "outputblob",
+      "type": "blob",
+      "direction": "out",
+      "path": "diabetes/diabetes-prediction/{blobname}.json",
+      "connection": "AZURE_STORAGE_CONNECTION"
+    }
+  ]
+}
