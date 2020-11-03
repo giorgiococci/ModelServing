@@ -16,9 +16,8 @@ Datasets
 |s5| LTG, lamotrigine |
 |s6| GLU, blood sugar level |
    
-<p></p>
-<p>**Note**: Each of these 10 feature variables have been mean centered and scaled by the standard deviation times n_samples (i.e. the sum of squares of each column totals 1).</p>
-<p></p>
+**Note**: Each of these 10 feature variables have been mean centered and scaled by the standard deviation times n_samples (i.e. the sum of squares of each column totals 1).
+
 
 | Target Name | Description |
 |-------------|-------------|
