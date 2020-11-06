@@ -1,0 +1,12 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "diabetes/diabetes-data/{blobname}.csv",
+      "connection": "AZURE_STORAGE_CONNECTION"
+    }
+  ]
+}

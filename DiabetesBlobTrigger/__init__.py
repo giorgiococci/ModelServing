@@ -10,6 +10,17 @@ import azure.functions as func
 
 
 def score_model(dataset: pd.DataFrame):
+  """[summary]
+
+  Args:
+      dataset (pd.DataFrame): [description]
+
+  Raises:
+      Exception: [description]
+
+  Returns:
+      [type]: [description]
+  """
   url = os.environ.get("MODEL_URL")
   headers = {'Authorization': f'Bearer {os.environ.get("DATABRICKS_TOKEN")}'}
   data_json = dataset.to_dict(orient='split')
